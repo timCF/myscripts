@@ -9,7 +9,7 @@ cd $PREFIX
 wget http://www.erlang.org/download/otp_src_17.5.tar.gz
 tar zxpvf otp_src_17.5.tar.gz
 cd ./otp_src_17.5/
-ERL_TOP=`pwd` ./otp_build configure --enable-smp-support --enable-hipe --enable-threads --with-ssl --enable-m64-build --prefix=$PREFIXERL
+ERL_TOP=`pwd` ./otp_build configure --enable-smp-support --enable-hipe --enable-threads --with-ssl=/usr/local/opt/openssl --enable-m64-build --prefix=$PREFIXERL
 ./otp_build release -a $PREFIXERL
 cd ~/OTP17/erl
 ./Install -minimal ~/OTP17/erl
