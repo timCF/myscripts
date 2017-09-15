@@ -1,4 +1,6 @@
 #!/bin/bash
+export LANG=C
+export GREP_OPTIONS=''
 mkdir ~/OTP17
 PREFIX=~/OTP17
 PREFIXERL=$PREFIX/erl
